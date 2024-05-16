@@ -91,7 +91,7 @@ def detect_wrapper():
             serialCommand("c")
     
     
-    threading.Timer(10, detect_wrapper).start()
+    threading.Timer(20, detect_wrapper).start()
 
 def exit_handler():
     serialCommand("a")

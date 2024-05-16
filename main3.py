@@ -76,10 +76,10 @@ def detect_wrapper():
     capture_image(2, cap2)
 
     
-    img1 = cv2.imread("image1.jpg")
-    detect_vechile(1,img1)
-    img2 = cv2.imread("image2.jpg")
-    detect_vechile(2,img2)
-    # threading.Timer(10, detect_wrapper).start()
+    # img1 = cv2.imread("image1.jpg")
+    # detect_vechile(1,img1)
+    # img2 = cv2.imread("image2.jpg")
+    # detect_vechile(2,img2)
+    threading.Timer(5, detect_wrapper).start()
 
 detect_wrapper()
